@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="FreeSql">
+      <HintPath>E:\01 软件工程\02 专用软件\01 注塑件视觉在线检测系统\02 项目源码\在线注塑\bin\Debug\FreeSql.dll</HintPath>
+    </Reference>
+    <Reference Include="FreeSql.DbContext">
+      <HintPath>E:\01 软件工程\02 专用软件\01 注塑件视觉在线检测系统\02 项目源码\在线注塑\MachineVision\DLL\FreeSql.DbContext.dll</HintPath>
+    </Reference>
+    <Reference Include="FreeSql.Extensions.Linq">
+      <HintPath>E:\01 软件工程\02 专用软件\01 注塑件视觉在线检测系统\02 项目源码\在线注塑\MachineVision\packages\FreeSql.Extensions.Linq.2.5.200\lib\net45\FreeSql.Extensions.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="FreeSql.Provider.Sqlite">
+      <HintPath>E:\01 软件工程\02 专用软件\01 注塑件视觉在线检测系统\02 项目源码\在线注塑\MachineVision\DLL\FreeSql.Provider.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite">
+      <HintPath>E:\01 软件工程\02 专用软件\01 注塑件视觉在线检测系统\02 项目源码\在线注塑\bin\Debug\System.Data.SQLite.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
